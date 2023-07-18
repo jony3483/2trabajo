@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@100;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+colores
+#ffffff blanco
+#a94ff3 lila
+#0000ff azul
+#f0f8ff blanco opaco
+
+tipografias
+font-family: 'Open Sans', sans-serif; h3 4
+font-family: 'Roboto', sans-serif; h1 2
+
+*/
+
+
+@media (max-width:1024px){    
+    .header-div{
+        background-color:black;
+        justify-content: center;
+    }
+    .navdir ul li a{
+        color: black;
+    }
+    .navdir li a:hover{
+        color: white;
+    }
+    .section-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    .cards{
+        width: 300px;
+        height: 550px;
+        background-color: #f0f8ff;
+        border: 2px solid rgb(169, 79, 243);
+        border-radius: 5px;
+        margin: 20px;
+        position: relative;
+    }
+}
+
+@media (max-width:768px){
+    .header-div{
+        background-color: #ffffff;
+    }
+    
+    .navdir ul li a{
+        color: #a94ff3;
+    }
+    .navdir li a:hover{
+        color: #0000ff;
+    }
+    .navdir{
+        justify-content: center;
+    }
+}   
+        
+@media (max-width:320px){
+    .header-div .navdir{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .625rem
+    }
+    .navdir{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .header-nav .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .625rem
+    }
+}   
+
+
+p{
+    font-family: 'Open Sans', sans-serif;  
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    z-index: 4;
+    top: 0;
+    background-color: #ffffff;
+}
+/*primer header */
+.header-div{
+    padding: .625rem 0rem;
+}
+
+.header-div ul li a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-size: 1.125rem;
+    color:#a94ff3;
+}
+
+.navdir li{
+    list-style: none;
+}
+.navdir{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-left: 30px;
+}
+.navdir li a:hover{
+    color: #0000ff;
+}
+
+
+
+/*segundo header*/
+
+
+.header-nav ul{
+    list-style: none;
+}
+.header-nav h1{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    row-gap: 20px;
+}
+.navbar li a:hover{
+    color: #0000ff;
+
+}
+
+/*movimientos*/
+.header-nav{
+    display: flex;
+    justify-content:space-around;
+    background-color: #a94ff3;
+    padding: 1rem 0rem;
+}
+
+
+
+
+/*cuerpo de la pagina con barra navegadora*/
+.section-principal{
+    width: 100%;
+    height: 500px;
+    font-size: 1.875rem;
+    background-image:url("../assets/img/hero1.jpg");
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+/*propiedes del formulario buscador*/
+fieldset{
+    border:1px solid rgb(169, 79, 243);
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Roboto', sans-serif;
+    color: #0000ff;
+    text-align: center;
+    font-style: italic;
+}
+.boton{
+    background-color: rgb(169, 79, 243);
+}
+.boton a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+/*seccion cards*/
+
+.section-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/*medicion de la carta*/
+.cards{
+    width: 300px;
+    height: 550px;
+    background-color: #f0f8ff;
+    border: 2px solid rgb(169, 79, 243);
+    border-radius: 5px;
+    margin: 20px;
+    position: relative;
+}
+
+
+/*propiedades de los me gustas*/
+.cards .icon-corazon{
+    width: 30px;
+    position: absolute;
+    right: 5px;
+}
+.cards .icon-chat{
+    width: 30px;
+    position: absolute;
+    right: 40px;
+}
+.cards .icon-compartir{
+    width: 30px;
+    position: absolute;
+    right: 75px;
+}
+
+/*propiedades del subtitulo*/
+.cards h3{
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+.cards h4{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1px;
+    text-align: center;
+
+}
+
+
+/*propiedades de la imagen de la cards*/
+.cards .clase-img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    object-fit: contain;
+}
+.clase-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*propiedades de las dimensiones del depto*/
+.description-depto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.icon .icon-edi{
+    width: 30px;
+}
+.icon .icon-dormi{
+    width: 30px;
+}
+.icon .icon-bano{
+    width: 30px;
+}
+.description-depto h4{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+
+.boton1{
+    background-color:rgb(169, 79, 243);
+    font-family: 'Open Sans', sans-serif;
+    color: beige;
+    border-radius: 5px;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+/*FOOTER*/
+
+.footer-principal{
+    width: 100%;
+    height: 200px;
+    background-color: #a94ff3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-principal div h3{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding: 10px;  
+}
+.footer-principal div h4{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 10px;  
+}
+.f-rss{
+    padding-left: 10px;
+}
+.icon-face{
+    width: 35px;
+    padding: 5px;
+}
+.f-navbar li{
+    list-style: none;
+}
+.f-navbar li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.f-navbar li a:hover{
+    color: #0000ff;
+
+}
+
+.span{
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+}
+
+.copy{
+    background-color: #a94ff3;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
+
+/*pagina propiedades*/
+.section-principal1{
+    width: 100%;
+    height: 500px;
+    font-size: 1.875rem;
+    background-image:url("../assets/img/hero1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:lightcyan ;
+    font-size: 3rem;
+}
+
+/*pagina SESION*/
+
+.sesion{
+    height: 300px;
+    margin: 32PX;
+}
+/*pagina cuenta*/
+
+.cuenta{
+    margin: 32PX;
+}
+/*pagina publicar*/
+.persona{
+    height: 300px;
+    margin: 32PX;
+}
+.corredor{
+    height: 300px;
+    margin: 32PX;
+}
+
+/*pagina contacto*/
+.contacto-bg{
+    background-image:url(../assets/img/casa1.jpg);
+    height:400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formulario{
+    background-color: #f0f8ff;
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+
+}
+.campo{
+   display: flex;
+   margin-bottom: 2rem;
+}
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+
+}
+.campo__field{
+    flex: 1;
+
+}
+.campo__field--textarea{
+    height: 10rem;
+
+}
+.botonc{
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    background: #a94ff3;
+    color:#ffffff;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+/*pagina quienes somos*/
+.grid{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,400px);
+    grid-template-areas:
+    "nosotros nosotros mision"
+    "vision vision mision";
+}
+.nosotros{
+    grid-area:nosotros ;
+    padding: 1rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: aliceblue;
+    align-items: center;
+    text-align: center;
+
+}
+.vision{
+    grid-area:vision ;
+    padding: 1rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: rgb(138, 185, 227);
+    align-items: center;
+    text-align: center;
+}
+.mision{
+    grid-area:mision ;
+    padding: 1rem 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: rgb(109, 180, 243);
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+/*medicion para entrega
+1024 pc
+768 tablet
+320 movil*/
+
+/*codigo ejemplo
+
+@media (max-widht:1024px){
+    header{
+        background-color: rgb (144.236.238)
+        justify-content: space-around;
+    }
+    .navbar li a{
+        color: black;
+    }
+    .navbar li a:hover{
+        color: white;
+    }
+}*/
+
+/*
+@media (max-widht:768px){
+    header{
+        background-color: rgb (144.236.238)
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+}*/
+
+/*
+@media (max-widht:320px){
+    .navbar{
+        flex-direction: column;
+    }
+}*/
+
