@@ -19,73 +19,7 @@ font-family: 'Roboto', sans-serif; h1 2
 */
 
 
-@media (max-width:1024px){    
-    .header-div{
-        background-color:black;
-        justify-content: center;
-    }
-    .navdir ul li a{
-        color: black;
-    }
-    .navdir li a:hover{
-        color: white;
-    }
-    .section-cards{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-evenly;
-    }
-    .cards{
-        width: 300px;
-        height: 550px;
-        background-color: #f0f8ff;
-        border: 2px solid rgb(169, 79, 243);
-        border-radius: 5px;
-        margin: 20px;
-        position: relative;
-    }
-}
-
-@media (max-width:768px){
-    .header-div{
-        background-color: #ffffff;
-    }
-    
-    .navdir ul li a{
-        color: #a94ff3;
-    }
-    .navdir li a:hover{
-        color: #0000ff;
-    }
-    .navdir{
-        justify-content: center;
-    }
-}   
-        
-@media (max-width:320px){
-    .header-div .navdir{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .625rem
-    }
-    .navdir{
-        flex-direction: column;
-        align-items: center;
-    }
-    .header-nav{
-        flex-direction: column;
-        align-items: center;
-    }
- 
-    .header-nav .navbar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .625rem
-    }
-}   
+   
 
 
 p{
@@ -496,43 +430,91 @@ h2{
 }
 
 
-
-
-
-
-/*medicion para entrega
-1024 pc
-768 tablet
-320 movil*/
-
-/*codigo ejemplo
-
-@media (max-widht:1024px){
-    header{
-        background-color: rgb (144.236.238)
-        justify-content: space-around;
+@media (max-width:1024px){  
+    /*pagina inicio*/  
+    .header-div{
+        background-color:black;
+        justify-content: center;
     }
-    .navbar li a{
+    .navdir ul li a{
         color: black;
     }
-    .navbar li a:hover{
+    .navdir li a:hover{
         color: white;
     }
-}*/
+    .section-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    .cards{
+        width: 300px;
+        height: 550px;
+        background-color: #f0f8ff;
+        border: 2px solid rgb(169, 79, 243);
+        border-radius: 5px;
+        margin: 20px;
+        position: relative;
+    }
+}
 
-/*
-@media (max-widht:768px){
+@media (max-width:768px){
+
+    /*pagina inicio*/
+    .header-div{
+        background-color: #ffffff;
+    }
+    
+    .navdir ul li a{
+        color: #a94ff3;
+    }
+    .navdir li a:hover{
+        color: #0000ff;
+    }
+    .navdir{
+        justify-content: center;
+    }
+}   
+        
+@media (max-width:320px){
+
+    /*pagina inicio
     header{
-        background-color: rgb (144.236.238)
+        position: static;
+        width: 100%;
+        z-index: 2;
+        top: 0;
+        background-color: #ffffff;
+    }*/
+    .header-div .navdir{
+        display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        align-items: center;
+        gap: .625rem
     }
-}*/
+    .navdir{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+    .header-nav .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .625rem
+    }
+}
 
-/*
-@media (max-widht:320px){
-    .navbar{
-        flex-direction: column;
-    }
-}*/
+
+
+
+
+
+
+
 
