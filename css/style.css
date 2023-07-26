@@ -479,14 +479,7 @@ h2{
         
 @media (max-width:320px){
 
-    /*pagina inicio
-    header{
-        position: static;
-        width: 100%;
-        z-index: 2;
-        top: 0;
-        background-color: #ffffff;
-    }*/
+
     .header-div .navdir{
         display: flex;
         flex-direction: column;
