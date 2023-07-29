@@ -1,0 +1,39 @@
+/*pagina quienes somos*/
+
+.grid{
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,400px);
+    grid-template-areas:
+    "nosotros nosotros mision"
+    "vision vision mision";
+        .nosotros{
+            grid-area:nosotros ;
+            padding: 1rem 2rem;
+            font-family: $font-family-primario;
+            font-weight: 400;
+            background-color: $background-secundario;
+            align-items: center;
+            text-align: center;
+        }
+        .vision{
+            grid-area:vision ;
+            padding: 1rem 2rem;
+            font-family: $font-family-secundario;
+            font-weight: 400;
+            background-color:$background-quinto;
+            align-items: center;
+            text-align: center;
+        }
+        .mision{
+            grid-area:mision ;
+            padding: 1rem 2rem;
+            font-family: $font-family-primario;
+            font-weight: 400;
+            background-color: $background-cuarto;
+            align-items: center;
+            text-align: center;
+        }
+}
