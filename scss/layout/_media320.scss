@@ -32,7 +32,7 @@
     }
     /*footer*/
     .footer-principal{
-        height: 300px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -76,7 +76,7 @@
             /*footer bostrap*/
     .footer-principal-b{
     background-color: $background-tercer;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,6 +92,9 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            .icon-face-b{
+                width: 30px;
+            }
         }
         .f-navbar-b{
             flex-direction: column;

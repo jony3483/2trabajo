@@ -439,8 +439,7 @@ h2 {
   /*pag inicio*/
   .header-div {
     display: flex;
-    justify-content: center;
-    /*footer bostrap*/ }
+    justify-content: center; }
     .header-div .navdir ul li a, .header-div .navbar ul li a {
       color: #a94ff3;
       font-size: 16px; }
@@ -514,7 +513,7 @@ h2 {
     gap: 10px; }
   /*footer*/
   .footer-principal {
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -547,7 +546,7 @@ h2 {
   /*footer bostrap*/
   .footer-principal-b {
     background-color: #a94ff3;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -561,6 +560,8 @@ h2 {
       flex-direction: column;
       justify-content: center;
       text-align: center; }
+      .footer-principal-b .f-rss-b .icon-face-b {
+        width: 30px; }
     .footer-principal-b .f-navbar-b {
       flex-direction: column;
       justify-content: center; }
