@@ -40,15 +40,11 @@ h2{
 
 /*seccion cards*/
 .section-cards{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    @include flex(row,wrap,space-evenly);
     .cards{
         width: 280px;
         height: 550px;
         background-color: $background-secundario;
-        border: 2px solid $color-text-principal;
         border: 2px solid $color-text-principal;
         border-radius: 5px;
         margin:20px;
@@ -94,10 +90,7 @@ h2{
   
     }
     .description-depto{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+       @include flex(row,wrap,space-evenly);
         text-align: center;
         .icon{
             .icon-edi{
