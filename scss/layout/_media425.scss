@@ -1,0 +1,131 @@
+@media (max-width: 425px){
+    header{
+        position: static; 
+    }
+    .header-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .625rem;
+        .navdir{
+            flex-direction:column;
+            align-items: center;
+        }
+    }
+    .header-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .625rem;
+        .navbar{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    fieldset{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        gap: 10px;
+    }
+    /*footer*/
+    .footer-principal{
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 16px;
+        .f-rss{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+        .f-navbar{
+            flex-direction: column;
+            justify-content: center;
+        }
+        .f-cont{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    /*pagina quienes somos*/
+    .grid{
+        display: grid;
+        align-items: center;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1 fr;
+        grid-template-rows: repeat 200px;
+        grid-area:
+        "nosotros nosotros nosotros"
+        "vision vision vision"
+        "mision mision mision";
+            .nosotros{
+                grid-area: nosotros;
+            }
+            .vision{
+                grid-area: vision;
+            }
+            .mision{
+                grid-area: mision;
+            }
+    }
+            /*footer bostrap*/
+    .footer-principal-b{
+    background-color: $background-tercer;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+        h3 {
+            color: $color-text-tercer;
+        }
+        h4{
+            color: $color-text-tercer;
+        }
+        .f-rss-b{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            .icon-face-b{
+                width: 30px;
+            }
+        }
+        .f-navbar-b{
+            flex-direction: column;
+            justify-content: center;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: $color-text-tercer;
+                        font-size: 20px;
+                        &:hover{
+                            color: $color-text-secundario;
+                        }
+                    }
+                }
+        }
+        .f-cont-b{
+            flex-direction: column;
+            align-items: center;
+                .span-b{
+                    color: $color-text-tercer;
+                    font-size: 16px;
+                }
+        }
+    }
+    .copy-b{
+        background-color: $background-tercer;
+        padding: 20px;
+        text-align: center;
+        color: $color-text-tercer;
+        font-size: 20px;
+        font-family: $font-family-primario;
+    }
+}
