@@ -7,7 +7,6 @@
     <meta name="keywords" content="asesores,venta de casas y departamentos,ofina,bodega,en todo chile">
     <meta name="autor" content="jonathan pina">
     <meta name="copyright" content="propiedades">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>contacto-propiedades</title>
 </head>
@@ -34,35 +33,73 @@
         </header>
         <H2>Escribenos te responderemos a la Brevedad</H2>
 
-        <section class="contacto">
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Ingrese su Nombre Completo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1"> 
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Telefono</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Ingrese su Correo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1"> 
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="description">Mensaje</label>
-                    <textarea placeholder="Por Favor Escriba su Comentario" class="form-control" name="" id="description" cols="30" rows="10"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Ingresar</button>
+        <main>
+            <form action="">
+                <fieldset>
+                   <legend> Formulario de contacto </legend>
+                        <div>
+                            <label for="name">Escribe tu nombre</label>
+                            <input type="text" name="name" placeholder="Juan">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="surname">Escribe tu apellido</label>
+                            <input type="text" name="surname" placeholder="Perez">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="mail">E-mail *</label>
+                            <input type="email" name="mail" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="nac">Elige tu país</label>
+                            <select name="nac" id="">
+                                <option value="arg">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="uru">Uruguay</option>
+                                <option value="peru">Perú</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="sexo">Elige tu género</label>
+                            <input type="radio" name="sexo" value="muj">Mujer
+                            <input type="radio" name="sexo" value="hom">Hombre
+                            <input type="radio" name="sexo" value="nob">No binario
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comentarios">Escribe tu consulta</label> <br>
+                            <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="teerminos">Acepto términos y condiciones</label>
+                            <input type="checkbox" name="terminos">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Enviar Datos">
+                            <input type="reset" value="Borrar datos">
+                        </div>
+                   
+                </fieldset>
             </form>
-            </section>
+        </main>     
             
             <footer>
-            <section class="footer-con">
+            <section class="footer-principal">
             <!--primerbloque-->
             <div>
                 <h3>Propiedades</h3>
                 
-                <div class="f-rss-con">
+                <div class="f-rss">
                     <img class="icon-face" src="../assets/img/facebook.png" alt="">
                     <img class="icon-face" src="../assets/img/instagram.png" alt="">
                     
@@ -71,34 +108,33 @@
     
 
             <!--SEGUNDObloque -->
-            <div class="f-navbar-con"> 
+            <div class="f-navbar"> 
                 <li><a href="quienessomos.html">Quienes Somos</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
                 <li><a href="publicar.html">Publicar</a></li>
             </div>
             <!--tercerbloque-->    
-            <div class="f-cont-con">
+            <div class="f-cont">
                 <div>
                     <img src="../assets/img/email.png" alt="">
-                    <span class="span-con">Contacto@123.com</span>
+                    <span class="span">Contacto@123.com</span>
                 </div>
                 <div>
                     <img src="../assets/img/marcador-de-posicion.png"alt="">
-                    <span class="span-con">Providencia,Santiago Chile</span>
+                    <span class="span">Providencia,Santiago Chile</span>
                 </div>
                 <div>
                     <img src="../assets/img/telefono.png" alt="">
-                    <span class="span-con">Telefono +569 12345678</span>
+                    <span class="span">Telefono +569 12345678</span>
                 </div>
                 
             </div> 
         </section>     
-        <div class="copy-con">
+        <div class="copy">
             <p>todos los derechos reservados tarea 2023</p>
         </div>
 
     </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    
 </body>
 </html>

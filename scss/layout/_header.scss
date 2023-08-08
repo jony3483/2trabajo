@@ -13,6 +13,10 @@ header{
         font-family: $font-family-primario; 
         li{
             list-style: none;
+            transition: transform 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+               &:hover{
+                transform: scale(1.1);
+               }
             a{
                 color: $color-text-principal;
                 font-size: 18px;
@@ -48,6 +52,10 @@ h1{
             font-family: $font-family-primario;
             li{
                 list-style:none;
+                transition: transform 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+                &:hover{
+                    transform: scale(1.1,1);
+                }
                 a{
                     text-decoration: none;
                     font-size: 1.2rem;
