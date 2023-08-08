@@ -295,32 +295,30 @@ h2 {
 /*pagina quienes somos*/
 .grid {
   display: grid;
-  align-items: center;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(2, 400px);
-  grid-template-areas: "nosotros nosotros mision" "vision vision mision"; }
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(3 1fr);
+  grid-template-areas: "nosotros vision mision" "nosotros vision mision" "nosotros vision mision"; }
   .grid .nosotros {
     grid-area: nosotros;
-    padding: 1rem 2rem;
+    padding: 16px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     background-color: #d2e1ee;
     align-items: center;
     text-align: center; }
   .grid .vision {
     grid-area: vision;
-    padding: 1rem 2rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    padding: 16px;
+    font-family: "Open Sans", sans-serif;
     background-color: #99c8f2;
     align-items: center;
     text-align: center; }
   .grid .mision {
     grid-area: mision;
-    padding: 1rem 2rem;
+    padding: 16px;
     font-family: "Open Sans", sans-serif;
-    font-weight: 400;
     background-color: #6db4f3;
     align-items: center;
     text-align: center; }
@@ -368,7 +366,7 @@ h2 {
     .footer-principal-b .f-rss-b {
       text-align: center; }
       .footer-principal-b .f-rss-b .icon-face-b {
-        width: 20px; }
+        width: 30px; }
     .footer-principal-b .f-navbar-b li {
       list-style: none;
       text-align: center; }
@@ -406,9 +404,13 @@ h2 {
       font-size: 16px; }
       .header-div .navdir ul li a:hover, .header-div .navbar ul li a:hover {
         color: #0000ff; }
+  /*quienes somos*/
+  .grid {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nosotros nosotros" "vision vision" "mision mision"; }
   .footer-principal {
     width: 100%;
-    height: 200px;
     background-color: #a94ff3;
     display: flex;
     flex-direction: row;
@@ -448,7 +450,13 @@ h2 {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
     text-align: center;
-    padding: 10px; } }
+    padding: 10px; }
+  .footer-principal-b .f-rss-b {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .footer-principal-b .f-rss-b .icon-face-b {
+      width: 30px; } }
 
 @media (max-width: 320px) {
   header {
@@ -498,18 +506,9 @@ h2 {
       gap: 16px; }
   /*pagina quienes somos*/
   .grid {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1 fr;
-    grid-template-rows: repeat 200px;
-    grid-area: "nosotros nosotros nosotros" "vision vision vision" "mision mision mision"; }
-    .grid .nosotros {
-      grid-area: nosotros; }
-    .grid .vision {
-      grid-area: vision; }
-    .grid .mision {
-      grid-area: mision; }
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nosotros nosotros" "vision vision" "mision mision"; }
   /*footer bostrap*/
   .footer-principal-b {
     background-color: #a94ff3;
@@ -702,18 +701,9 @@ h2 {
       align-items: center; }
   /*pagina quienes somos*/
   .grid {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1 fr;
-    grid-template-rows: repeat 200px;
-    grid-area: "nosotros nosotros nosotros" "vision vision vision" "mision mision mision"; }
-    .grid .nosotros {
-      grid-area: nosotros; }
-    .grid .vision {
-      grid-area: vision; }
-    .grid .mision {
-      grid-area: mision; }
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "nosotros nosotros" "vision vision" "mision mision"; }
   /*footer bostrap*/
   .footer-principal-b {
     background-color: #a94ff3;

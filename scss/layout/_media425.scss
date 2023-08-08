@@ -53,25 +53,14 @@
         }
     }
     /*pagina quienes somos*/
+   
     .grid{
-        display: grid;
-        align-items: center;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1 fr;
-        grid-template-rows: repeat 200px;
-        grid-area:
-        "nosotros nosotros nosotros"
-        "vision vision vision"
-        "mision mision mision";
-            .nosotros{
-                grid-area: nosotros;
-            }
-            .vision{
-                grid-area: vision;
-            }
-            .mision{
-                grid-area: mision;
-            }
+        grid-template-columns: repeat(2, 40%);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "nosotros nosotros"
+         "vision vision"
+          "mision mision";
     }
       
        

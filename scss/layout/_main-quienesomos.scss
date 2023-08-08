@@ -2,36 +2,35 @@
 
 .grid{
     display: grid;
-    align-items: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2,400px);
+    justify-content: center;
+    gap:10px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: repeat(3 1fr);
     grid-template-areas:
-    "nosotros nosotros mision"
-    "vision vision mision";
+    "nosotros vision mision"
+   "nosotros vision mision"
+    "nosotros vision mision";
         .nosotros{
             grid-area:nosotros ;
-            padding: 1rem 2rem;
+            padding: 16px;
             font-family: $font-family-primario;
-            font-weight: 400;
             background-color: $background-secundario;
             align-items: center;
             text-align: center;
         }
         .vision{
             grid-area:vision ;
-            padding: 1rem 2rem;
-            font-family: $font-family-secundario;
-            font-weight: 400;
+            padding: 16px;
+            font-family: $font-family-primario;
             background-color:$background-quinto;
             align-items: center;
             text-align: center;
         }
         .mision{
             grid-area:mision ;
-            padding: 1rem 2rem;
+            padding: 16px;
             font-family: $font-family-primario;
-            font-weight: 400;
             background-color: $background-cuarto;
             align-items: center;
             text-align: center;
