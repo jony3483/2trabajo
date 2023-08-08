@@ -16,6 +16,9 @@
         width: 100%;
         height: 200px;
         background-color:$background-tercer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
         h4{
             color: $color-text-tercer;
             font-family: $font-family-primario;
@@ -27,9 +30,9 @@
             font-family: $font-family-primario;
             font-size: 20px;
             padding: 10px;  
-        }        
+        }      
         .f-rss{
-    
+                align-items: center;
                 .icon-face{
                     width: 35px;
                     padding: 5px;
