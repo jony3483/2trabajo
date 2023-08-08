@@ -166,12 +166,6 @@ h2 {
     margin-top: 10px; }
 
 /* footer*/
-.footer-principal h4 {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  padding: 10px; }
-
 .footer-principal {
   width: 100%;
   height: 200px;
@@ -181,6 +175,11 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
+  .footer-principal h4 {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding: 10px; }
   .footer-principal h3 {
     color: #ffffff;
     font-family: "Open Sans", sans-serif;
@@ -256,55 +255,6 @@ h2 {
     font-size: 16px; }
 
 .copy-b {
-  background-color: #a94ff3;
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  text-align: center;
-  padding: 10px; }
-
-/*foter de pagina contactobostrap*/
-.footer-principal-cb h4 {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  padding: 10px; }
-
-.footer-principal-cb {
-  width: 100%;
-  height: 200px;
-  background-color: #a94ff3;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
-  .footer-principal-cb h3 {
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    padding: 10px; }
-  .footer-principal-cb .f-rss-cb {
-    padding-left: 10px; }
-    .footer-principal-cb .f-rss-cb .icon-face-cb {
-      width: 35px;
-      padding: 5px; }
-  .footer-principal-cb .f-navbar-cb li {
-    list-style: none;
-    text-align: center; }
-    .footer-principal-cb .f-navbar-cb li a {
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 20px;
-      font-family: "Open Sans", sans-serif; }
-      .footer-principal-cb .f-navbar-cb li a:hover {
-        color: #0000ff; }
-  .footer-principal-cb .f-cont-cb .span-cb {
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 16px; }
-
-.copy-cb {
   background-color: #a94ff3;
   color: #ffffff;
   font-size: 20px;
@@ -456,40 +406,44 @@ h2 {
       font-size: 16px; }
       .header-div .navdir ul li a:hover, .header-div .navbar ul li a:hover {
         color: #0000ff; }
-  .footer-principal-cb {
-    height: 250px;
-    background-color: #a94ff3;
-    /*@include flex(row,wrap,space-evenly);
-            align-items: center;*/ }
-    .footer-principal-cb h3 {
+  .footer-principal {
+    width: 100%;
+    height: 200px;
+    background-color: #a94ff3; }
+    .footer-principal h4 {
       color: #ffffff;
-      text-align: center; }
-    .footer-principal-cb h4 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      padding: 10px; }
+    .footer-principal h3 {
       color: #ffffff;
-      text-align: center; }
-    .footer-principal-cb .f-rss-cb {
-      text-align: center; }
-      .footer-principal-cb .f-rss-cb .icon-face-b {
-        width: 20px; }
-    .footer-principal-cb .f-navbar-cb li {
+      font-family: "Open Sans", sans-serif;
+      font-size: 20px;
+      padding: 10px; }
+    .footer-principal .f-rss .icon-face {
+      width: 35px;
+      padding: 5px; }
+    .footer-principal .f-navbar li {
       list-style: none;
       text-align: center; }
-      .footer-principal-cb .f-navbar-cb li a {
+      .footer-principal .f-navbar li a {
         text-decoration: none;
         color: #ffffff;
-        font-size: 20px; }
-        .footer-principal-cb .f-navbar-cb li a:hover {
+        font-size: 20px;
+        font-family: "Open Sans", sans-serif; }
+        .footer-principal .f-navbar li a:hover {
           color: #0000ff; }
-    .footer-principal-cb .f-cont-cb .span-b {
+    .footer-principal .f-cont .span {
       color: #ffffff;
+      font-family: "Open Sans", sans-serif;
       font-size: 16px; }
-  .copy-cb {
+  .copy {
     background-color: #a94ff3;
-    padding: 10px;
-    text-align: center;
     color: #ffffff;
     font-size: 20px;
-    font-family: "Open Sans", sans-serif; } }
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    padding: 10px; } }
 
 @media (max-width: 320px) {
   header {
