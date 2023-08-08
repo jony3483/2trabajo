@@ -92,6 +92,7 @@
             flex-direction: column;
             justify-content: center;
             text-align: center;
+            
             .icon-face-b{
                 width: 30px;
             }
@@ -129,3 +130,62 @@
         font-family: $font-family-primario;
     }
 }
+
+.footer-principal-cb{
+    background-color: $background-tercer;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+        h3 {
+            color: $color-text-tercer;
+        }
+        h4{
+            color: $color-text-tercer;
+        }
+        .f-rss-cb{
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            
+            .icon-face-cb{
+                width: 30px;
+            }
+        }
+        .f-navbar-cb{
+            flex-direction: column;
+            justify-content: center;
+            padding: 16px;
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: $color-text-tercer;
+                        font-size: 20px;
+                        padding: 16px;
+                        &:hover{
+                            color: $color-text-secundario;
+                        }
+                    }
+                }
+        }
+        .f-cont-cb{
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+                .span-cb{
+                    color: $color-text-tercer;
+                    font-size: 16px;
+                }
+        }
+    }
+    .copy-cb{
+        background-color: $background-tercer;
+        padding: 20px;
+        text-align: center;
+        color: $color-text-tercer;
+        font-size: 20px;
+        font-family: $font-family-primario;
+    }

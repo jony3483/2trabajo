@@ -263,6 +263,55 @@ h2 {
   text-align: center;
   padding: 10px; }
 
+/*foter de pagina contactobostrap*/
+.footer-principal-cb h4 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 10px; }
+
+.footer-principal-cb {
+  width: 100%;
+  height: 200px;
+  background-color: #a94ff3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center; }
+  .footer-principal-cb h3 {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    padding: 10px; }
+  .footer-principal-cb .f-rss-cb {
+    padding-left: 10px; }
+    .footer-principal-cb .f-rss-cb .icon-face-cb {
+      width: 35px;
+      padding: 5px; }
+  .footer-principal-cb .f-navbar-cb li {
+    list-style: none;
+    text-align: center; }
+    .footer-principal-cb .f-navbar-cb li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: "Open Sans", sans-serif; }
+      .footer-principal-cb .f-navbar-cb li a:hover {
+        color: #0000ff; }
+  .footer-principal-cb .f-cont-cb .span-cb {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; }
+
+.copy-cb {
+  background-color: #a94ff3;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 10px; }
+
 /*---------pagina propiedades-------*/
 .section-principal1 {
   width: 100%;
@@ -292,42 +341,6 @@ h2 {
 .persona, .corredor {
   height: 300px;
   margin: 32PX; }
-
-/*pagina contacto*/
-.contacto-bg {
-  background-image: url(../assets/img/casa1.jpg);
-  height: 390px;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.formulario {
-  background-color: #d2e1ee;
-  margin: -5rem auto 0 auto;
-  width: 95%;
-  padding: 5rem; }
-  .formulario .campo {
-    display: flex;
-    margin-bottom: 2rem; }
-    .formulario .campo .campo__label {
-      flex: 0 0 9rem;
-      text-align: right;
-      padding-right: 2rem; }
-    .formulario .campo .campo__field {
-      flex: 1; }
-    .formulario .campo .campo__field--textarea {
-      height: 10rem; }
-  .formulario .botonc {
-    display: block;
-    font-family: "Roboto", sans-serif;
-    background: #a94ff3;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 2rem;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    border: none; }
 
 /*pagina quienes somos*/
 .grid {
@@ -361,6 +374,9 @@ h2 {
     background-color: #6db4f3;
     align-items: center;
     text-align: center; }
+
+.contacto {
+  margin: 32PX; }
 
 @media (max-width: 1024px) {
   /*pagina inicio*/
@@ -440,47 +456,293 @@ h2 {
       font-size: 16px; }
       .header-div .navdir ul li a:hover, .header-div .navbar ul li a:hover {
         color: #0000ff; }
-    .header-div .footer-principal {
-      height: 200px; }
-    .header-div .footer-principal-b {
-      height: 250px;
-      background-color: #a94ff3;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+  .footer-principal-cb {
+    height: 250px;
+    background-color: #a94ff3;
+    /*@include flex(row,wrap,space-evenly);
+            align-items: center;*/ }
+    .footer-principal-cb h3 {
+      color: #ffffff;
+      text-align: center; }
+    .footer-principal-cb h4 {
+      color: #ffffff;
+      text-align: center; }
+    .footer-principal-cb .f-rss-cb {
+      text-align: center; }
+      .footer-principal-cb .f-rss-cb .icon-face-b {
+        width: 20px; }
+    .footer-principal-cb .f-navbar-cb li {
+      list-style: none;
+      text-align: center; }
+      .footer-principal-cb .f-navbar-cb li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px; }
+        .footer-principal-cb .f-navbar-cb li a:hover {
+          color: #0000ff; }
+    .footer-principal-cb .f-cont-cb .span-b {
+      color: #ffffff;
+      font-size: 16px; }
+  .copy-cb {
+    background-color: #a94ff3;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif; } }
+
+@media (max-width: 320px) {
+  header {
+    position: static; }
+  .header-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem; }
+    .header-div .navdir, .header-div .navbar {
+      flex-direction: column;
       align-items: center; }
-      .header-div .footer-principal-b h3 {
-        color: #ffffff;
-        text-align: center; }
-      .header-div .footer-principal-b h4 {
-        color: #ffffff;
-        text-align: center; }
-      .header-div .footer-principal-b .f-rss-b {
-        text-align: center; }
-        .header-div .footer-principal-b .f-rss-b .icon-face-b {
-          width: 20px; }
-      .header-div .footer-principal-b .f-navbar-b li {
-        list-style: none;
-        text-align: center; }
-        .header-div .footer-principal-b .f-navbar-b li a {
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem; }
+    .header-nav .navbar {
+      flex-direction: column;
+      align-items: center; }
+  fieldset {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px; }
+  /*footer*/
+  .footer-principal {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px; }
+    .footer-principal .f-rss {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+    .footer-principal .f-navbar {
+      flex-direction: column;
+      justify-content: center; }
+    .footer-principal .f-cont {
+      flex-direction: column;
+      align-items: center; }
+  /*pagina quienes somos*/
+  .grid {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1 fr;
+    grid-template-rows: repeat 200px;
+    grid-area: "nosotros nosotros nosotros" "vision vision vision" "mision mision mision"; }
+    .grid .nosotros {
+      grid-area: nosotros; }
+    .grid .vision {
+      grid-area: vision; }
+    .grid .mision {
+      grid-area: mision; }
+  /*footer bostrap*/
+  .footer-principal-b {
+    background-color: #a94ff3;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px; }
+    .footer-principal-b h3 {
+      color: #ffffff; }
+    .footer-principal-b h4 {
+      color: #ffffff; }
+    .footer-principal-b .f-rss-b {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .footer-principal-b .f-rss-b .icon-face-b {
+        width: 30px; }
+    .footer-principal-b .f-navbar-b {
+      flex-direction: column;
+      justify-content: center; }
+      .footer-principal-b .f-navbar-b li {
+        list-style: none; }
+        .footer-principal-b .f-navbar-b li a {
           text-decoration: none;
           color: #ffffff;
           font-size: 20px; }
-          .header-div .footer-principal-b .f-navbar-b li a:hover {
+          .footer-principal-b .f-navbar-b li a:hover {
             color: #0000ff; }
-      .header-div .footer-principal-b .f-cont-b .span-b {
+    .footer-principal-b .f-cont-b {
+      flex-direction: column;
+      align-items: center; }
+      .footer-principal-b .f-cont-b .span-b {
         color: #ffffff;
         font-size: 16px; }
-    .header-div .copy-b {
-      background-color: #a94ff3;
-      padding: 10px;
-      text-align: center;
-      color: #ffffff;
-      font-size: 20px;
-      font-family: "Open Sans", sans-serif; } }
+  .copy-b {
+    background-color: #a94ff3;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif; } }
 
-@media (max-width: 320px) {
+.footer-principal-cb {
+  background-color: #a94ff3;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 16px; }
+  .footer-principal-cb h3 {
+    color: #ffffff; }
+  .footer-principal-cb h4 {
+    color: #ffffff; }
+  .footer-principal-cb .f-rss-cb {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .footer-principal-cb .f-rss-cb .icon-face-cb {
+      width: 30px; }
+  .footer-principal-cb .f-navbar-cb {
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px; }
+    .footer-principal-cb .f-navbar-cb li {
+      list-style: none; }
+      .footer-principal-cb .f-navbar-cb li a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+        padding: 16px; }
+        .footer-principal-cb .f-navbar-cb li a:hover {
+          color: #0000ff; }
+  .footer-principal-cb .f-cont-cb {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px; }
+    .footer-principal-cb .f-cont-cb .span-cb {
+      color: #ffffff;
+      font-size: 16px; }
+
+.copy-cb {
+  background-color: #a94ff3;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif; }
+
+@media (max-width: 375px) {
+  header {
+    position: static; }
+  .header-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem; }
+    .header-div .navdir, .header-div .navbar {
+      flex-direction: column;
+      align-items: center; }
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .625rem; }
+    .header-nav .navbar {
+      flex-direction: column;
+      align-items: center; }
+  fieldset {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px; }
+  /*footer*/
+  .footer-principal {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px; }
+    .footer-principal .f-rss {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+    .footer-principal .f-navbar {
+      flex-direction: column;
+      justify-content: center; }
+    .footer-principal .f-cont {
+      flex-direction: column;
+      align-items: center; }
+  /*pagina quienes somos*/
+  .grid {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1 fr;
+    grid-template-rows: repeat 200px;
+    grid-area: "nosotros nosotros nosotros" "vision vision vision" "mision mision mision"; }
+    .grid .nosotros {
+      grid-area: nosotros; }
+    .grid .vision {
+      grid-area: vision; }
+    .grid .mision {
+      grid-area: mision; }
+  /*footer bostrap*/
+  .footer-principal-b {
+    background-color: #a94ff3;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 16px; }
+    .footer-principal-b h3 {
+      color: #ffffff; }
+    .footer-principal-b h4 {
+      color: #ffffff; }
+    .footer-principal-b .f-rss-b {
+      flex-direction: column;
+      justify-content: center;
+      text-align: center; }
+      .footer-principal-b .f-rss-b .icon-face-b {
+        width: 30px; }
+    .footer-principal-b .f-navbar-b {
+      flex-direction: column;
+      justify-content: center; }
+      .footer-principal-b .f-navbar-b li {
+        list-style: none; }
+        .footer-principal-b .f-navbar-b li a {
+          text-decoration: none;
+          color: #ffffff;
+          font-size: 20px; }
+          .footer-principal-b .f-navbar-b li a:hover {
+            color: #0000ff; }
+    .footer-principal-b .f-cont-b {
+      flex-direction: column;
+      align-items: center; }
+      .footer-principal-b .f-cont-b .span-b {
+        color: #ffffff;
+        font-size: 16px; }
+  .copy-b {
+    background-color: #a94ff3;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif; } }
+
+@media (max-width: 425px) {
   header {
     position: static; }
   .header-div {
